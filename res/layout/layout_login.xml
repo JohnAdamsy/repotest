@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="254dp"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+ <!-- National ID Input -->
+    <EditText
+        android:id="@+id/etnatid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/ID"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+
+        android:inputType="number">
+         <requestFocus />
+        </EditText>
+
+      <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etnatid"
+        android:layout_below="@+id/etnatid"
+        android:hint="@string/password"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword" />
+
+    <!-- Buttons -->
+
+    <TextView
+        android:id="@+id/validation_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etPassword"
+        android:padding="5dip"
+        android:textColor="#e30000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="btnRegister_Clicked"
+        android:layout_alignRight="@+id/etPassword"
+        android:text="@string/Reg" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/btnRegister"
+        android:onClick="btnLogin_Clicked"
+        android:text="@string/login" />
+
+    </RelativeLayout>
+
+</ScrollView>

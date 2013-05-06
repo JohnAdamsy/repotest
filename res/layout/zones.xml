@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/chozone" />
+
+     <CheckedTextView
+         android:id="@+id/checkedTextView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_below="@+id/textView1"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="18dp"
+         android:text="@string/strth" />
+
+     <CheckedTextView
+         android:id="@+id/checkedTextView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/checkedTextView2"
+         android:layout_below="@+id/checkedTextView2"
+         android:layout_marginTop="34dp"
+         android:text="CheckedTextView" />
+
+     <CheckedTextView
+         android:id="@+id/checkedTextView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/checkedTextView1"
+         android:layout_below="@+id/checkedTextView1"
+         android:layout_marginTop="28dp"
+         android:text="CheckedTextView" />
+
+     <CheckedTextView
+         android:id="@+id/checkedTextView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/checkedTextView3"
+         android:layout_below="@+id/checkedTextView3"
+         android:layout_marginTop="28dp"
+         android:text="CheckedTextView" />
+
+     <CheckedTextView
+         android:id="@+id/checkedTextView5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/checkedTextView4"
+         android:layout_below="@+id/checkedTextView4"
+         android:layout_marginTop="34dp"
+         android:text="CheckedTextView" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+    <!-- First Name Label -->
+    <!-- TextView
+        android:id="@+id/tvfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/frst" /-->
+
+    <!-- First Name Input -->
+    <EditText
+        android:id="@+id/etfname"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/frst"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+     <!-- Last Name Label -->
+    <!--TextView
+        android:id="@+id/tvlname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etfname"
+        android:layout_marginTop="14dp"
+        android:text="@string/lst" /-->
+
+    <!-- Last Name Input-->
+    <EditText
+        android:id="@+id/etlname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etfname"
+        android:hint="@string/lst"
+        android:layout_below="@+id/etfname"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName" />
+    
+    <!-- National ID Label -->
+    <!--TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etlname"
+        android:layout_marginTop="14dp"
+        android:text="@string/ID" /-->
+    
+    <!-- National ID Input -->
+    <EditText
+        android:id="@+id/etnatid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etlname"
+        android:hint="@string/ID"
+        android:layout_below="@+id/etlname"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:inputType="number" />
+    
+     <!-- Password Label -->
+     <!-- TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etnatid"
+        android:layout_marginTop="14dp"
+        android:text="@string/password" /-->
+
+      <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etnatid"
+        android:layout_below="@+id/etnatid"
+        android:hint="@string/password"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword" />
+    
+    <!-- Confirm Password Label -->
+    <!--TextView
+        android:id="@+id/tvCPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="14dp"
+        android:text="@string/cpassword" /-->
+    
+    <!-- Confirm Password Input -->
+    <EditText
+        android:id="@+id/etCPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/etnatid"
+        android:layout_below="@+id/etPassword"
+        android:hint="@string/cpassword"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword" />
+
+    <!-- Buttons -->
+
+    <TextView
+        android:id="@+id/validation_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etCPassword"
+        android:padding="5dip"
+        android:textColor="#e30000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="btnBack_Clicked"
+        android:text="@string/bk" />
+
+    <Button
+        android:id="@+id/bhm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etCPassword"
+        android:text="@string/hm" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_toLeftOf="@+id/bhm"
+        android:onClick="btnRegister_Clicked"
+        android:text="@string/Reg" />
+
+    </RelativeLayout>
+
+</ScrollView>

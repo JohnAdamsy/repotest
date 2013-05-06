@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvzone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerParkingZone"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/zone" />
+
+    <Spinner
+        android:id="@+id/spinnerParkingZone"
+        android:layout_width="252dp"
+        android:layout_height="45dip"
+        android:layout_alignLeft="@+id/tvvh"
+        android:layout_below="@+id/tvzone"
+        android:prompt="@string/spinner_prompt" />
+
+    <TextView
+        android:id="@+id/tvvh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerParkingZone"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/kb" />
+
+    <EditText
+        android:id="@+id/etvh"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvvh"
+        android:layout_below="@+id/tvvh"
+        android:ems="10"
+        android:inputType="textPostalAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    
+     <TextView
+        android:id="@+id/validation_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etvh"
+        android:padding="5dip"
+        android:textColor="#e30000"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/eGeza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etvh"
+        android:layout_centerVertical="true"
+        android:onClick="btnEgeza_Clicked"
+        android:text="@string/book" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eGeza"
+        android:layout_alignBottom="@+id/eGeza"
+        android:layout_alignRight="@+id/back"
+        android:text="@string/hm"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/home"
+        android:layout_alignBottom="@+id/home"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/tvvh"
+        android:onClick="btnBack_Clicked"
+        android:text="@string/bk" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eGeza</string>
+    <string name="activity_register_name">eGeza::Register</string>
+    <string name="activity_login_name">eGeza::Login</string>
+    <string name="activity_parking_name">eGeza::Book Parking</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="reg">Register for eGeza services!</string>
+    <string name="booking">eGeza your vehicle?</string>
+    <string name="details">View your eGeza details</string>
+    <string name="wlc">Welcome To eGeza Homepage!</string>
+    <string name="kb">Vehicle Registration No.</string>
+    <string name="eGeza">eGeza Your Car?</string>
+    <string name="mobile">Mobile No.</string>
+    <string name="ID">National ID No.</string>
+     <string name="zone">Parking Zone</string>
+    <string name="password">Password.</string>
+    <string name="cpassword">Confirm Password.</string>
+    <string name="stp">Stop Time</string>
+    <string name="strt">Start Time</string>
+    <string name="Date">Date</string>
+    <string name="bk">Back</string>
+    <string name="login">Login</string>
+    <string name="hm">Home</string>
+    <string name="Reg">Register</string>
+    <string name="book">eGeza</string>
+    <string name="frst">First Name</string>
+    <string name="lst">Last Name</string>
+    <string name="pay">eGeza Pay</string>
+    <string name="via">Pay Via:</string>
+    <string name="mp">M-PESA</string>
+    <string name="cash">CASH</string>
+    <string name="Pay">Pay</string>
+    <string name="strth">Strathmore University eGeza Space</string>
+    <string name="chozone">eGeza Your Car at:</string>
+    <string name="spinner_prompt">Choose eGeza Destination</string>
+    <string name="alert_first_name_required">First Name is required!</string>
+    <string name="alert_vehicleid_required">Vehicle Number Plate required</string>
+    <string name="alert_parkingzone_required">Parking zone required</string>
+    <string name="alert_last_name_required">Last Name is required!</string>
+    <string name="alert_national_id_required">National Id is required!</string>
+    <string name="alert_password_required">Password is required!</string>
+     <string name="alert_cpassword_required">Confirm Password</string>
+      <string name="alert_password_no_match">Passwords don\'t match</string>
+    <string name="alert_mobile_no_invalid_format">Invalid Mobile No!</string>
+    <string name="alert_national_id_invalid_format">Invalid National Id!</string>
+    
+    
+
+</resources>
